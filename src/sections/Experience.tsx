@@ -359,7 +359,7 @@ export default function Experience() {
               </p>
               <div className="xp__cta reveal-line">
                 <Magnetic>
-                  <button type="button" className="btn btn--gold" onClick={discover} style={{borderRadius: "5px"}}>
+                  <button type="button" className="btn btn--gold" onClick={() => navigate('/shop')} style={{borderRadius: "5px"}}>
                     <span>اكتشف الساعة</span>
                     
                   </button>
