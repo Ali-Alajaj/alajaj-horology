@@ -6,7 +6,7 @@ import * as THREE from 'three';
 import { Studio, useWatch } from '../three/r3f';
 import { DEFAULT_CONFIG, LAYER_INFO } from '../three/watch';
 import { PARTS } from '../data';
-import { gsap, ScrollTrigger, reducedMotion, scrollToTarget } from '../lib/scroll';
+import { gsap, ScrollTrigger, reducedMotion } from '../lib/scroll';
 import { useStore } from '../store';
 import Magnetic from '../components/Magnetic';
 import Media from '../components/Media';
@@ -316,12 +316,6 @@ export default function Experience() {
     };
   }, []);
 
-  const discover = () => {
-    const el = section.current!;
-    const range = el.offsetHeight - window.innerHeight;
-    scrollToTarget(el.offsetTop + range * 0.56);
-  };
-
   return (
     <section className="xp" id="top" ref={section} aria-label="ساعة Alajaj Meridian">
       <div className={`xp__stage${ready ? ' is-ready' : ''}`}>
@@ -360,13 +354,13 @@ export default function Experience() {
               <div className="xp__cta reveal-line">
                 <Magnetic>
                   <button
-  type="button"
-  className="btn btn--gold"
-  onClick={() => navigate('/shop')}
-  style={{ borderRadius: '5px' }}
->
-  <span>اكتشف المجموعة</span>
-</button>
+                    type="button"
+                    className="btn btn--gold"
+                    onClick={() => navigate('/shop')}
+                    style={{ borderRadius: '5px' }}
+                  >
+                    <span>اكتشف المجموعة</span>
+                  </button>
                 </Magnetic>
                 <button type="button" className="link" onClick={() => navigate('/boutique')}>
                   احجز موعدًا في البوتيك
