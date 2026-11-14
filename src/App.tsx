@@ -21,12 +21,12 @@ import Footer from './sections/Footer';
 import Checkout from './pages/Checkout';
 
 const TITLES: Record<Route, string> = {
-  home: 'العجاج للساعات — ساعات ميكانيكية تُصاغ يدويًا | ALAJAJ HOROLOGY',
-  about: 'عن الساعة — العجاج للساعات',
-  shop: 'المتجر — العجاج للساعات',
-  boutique: 'احجز موعدًا في البوتيك — العجاج للساعات',
-  checkout: 'إتمام الطلب — العجاج للساعات',
-  notfound: 'الصفحة غير موجودة — العجاج للساعات',
+  home: 'العجاج للساعات | ALAJAJ HOROLOGY',
+  about: 'عن الساعة | العجاج للساعات',
+  shop: 'المتجر | العجاج للساعات',
+  boutique: 'احجز موعدًا في البوتيك | العجاج للساعات',
+  checkout: 'إتمام الطلب | العجاج للساعات',
+  notfound: 'الصفحة غير موجودة | العجاج للساعات',
 };
 
 /** Three doors from the home page to the other pages. */
